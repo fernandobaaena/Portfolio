@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Blinker';
 }
 
 html {
@@ -62,6 +63,15 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+.a{
+    color: black;
+}
+
+.a:hover{
+    color: #0064a6;
+    font-size: 25px;
 }
 
 
@@ -121,7 +131,7 @@ img{
 
 #contact {
     padding: 50px;
-    background-color: #737272;
+    background-color: #cbcbcb;
     text-align: center;
 }
 
