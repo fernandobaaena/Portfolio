@@ -94,6 +94,7 @@ nav ul li a:hover {
 /* Proyectos */
 #projects {
     padding: 50px;
+    padding-top: 75px;
     background-color: #fff;
     text-align: center;
     display: flex;
@@ -127,8 +128,20 @@ img{
 .project-tile p {
     font-size: 1.2rem;
 }
+/*Sobre mi*/
 
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
 
+.about-me-text{
+    max-width: 35%;
+}
+/*Contact*/
 #contact {
     padding: 50px;
     background-color: #cbcbcb;
@@ -145,6 +158,14 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
+}
+
+.html, .js{
+    max-width: 15%;
+}
+
+.css{
+    max-width: 25%;
 }
 
 
