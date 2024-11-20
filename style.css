@@ -66,12 +66,14 @@ nav ul li a:hover {
 }
 
 .a{
-    color: black;
+    font-size: 50px;
+    color: #007acc;
+    margin: 5px;
 }
-
 .a:hover{
     color: #0064a6;
-    font-size: 25px;
+    font-size: 55px;
+    cursor: pointer;
 }
 
 
@@ -105,6 +107,13 @@ nav ul li a:hover {
 
 img{
     max-width: 85%;
+}
+
+.projects-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .project-tile {
