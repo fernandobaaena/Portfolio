@@ -37,12 +37,28 @@ h3 {
 nav {
     position: fixed;
     top: 0;
-    width: 100%;
-    background-color: #333;
-    box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.561);
-    padding: 10px;
-    z-index: 1000;
-    padding: 2rem;
+    left: 37%;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    box-shadow: 0px 5px 7px rgb(0, 0, 0);
+    padding: 10px 2rem;
+    border-radius: 5px;
+    margin-top: 1%;
+    z-index: 10;
+    backdrop-filter: blur(10px); /* Aplica el filtro al fondo */
+}
+
+nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit; /* Hereda el fondo del nav */
+    backdrop-filter: blur(10px); /* Aplica el efecto blur */
+    z-index: -1; /* Coloca detrás del contenido */
+    border-radius: inherit; /* Respeta el border-radius */
 }
 
 nav ul {
@@ -56,9 +72,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 18px;
+    z-index: 2500;
 }
 
 nav ul li a:hover {
@@ -74,30 +91,6 @@ nav ul li a:hover {
     color: #0064a6;
     font-size: 55px;
     cursor: pointer;
-}
-
-
-#welcome-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    z-index: -2;
-}
-
-#welcome-section p {
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-
-.welcome-text{
-    z-index: 5;
-    position: relative;
-    top: 350px;
 }
 
 .circle{
@@ -121,6 +114,30 @@ nav ul li a:hover {
     top: -65%;  
     position: relative;
     filter: blur(170px); 
+}
+
+/*welcome*/
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    z-index: -2;
+}
+
+#welcome-section p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.welcome-text{
+    z-index: 5;
+    position: relative;
+    top: 350px;
 }
 
 /* Proyectos */
