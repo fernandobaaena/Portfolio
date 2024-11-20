@@ -83,14 +83,44 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #0064a6;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     text-align: center;
+    z-index: -2;
 }
 
 #welcome-section p {
     font-size: 1.5rem;
     margin-top: 20px;
+}
+
+.welcome-text{
+    z-index: 5;
+    position: relative;
+    top: 350px;
+}
+
+.circle{
+    height: 70%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: rgb(237, 33, 255);
+    z-index: 1;  
+    left: -50%;  
+    position: relative;
+    filter: blur(170px);
+}
+
+.circle-2{
+    height: 70%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: rgb(129, 253, 98);
+    z-index: 1;  
+    right: -30%;
+    top: -65%;  
+    position: relative;
+    filter: blur(170px); 
 }
 
 /* Proyectos */
@@ -149,6 +179,7 @@ img{
 
 .about-me-text{
     max-width: 35%;
+    font-size: 1.5rem;
 }
 /*Contact*/
 #contact {
@@ -202,5 +233,10 @@ footer {
 
     h3 {
         font-size: 2rem;
+    }
+
+    .about-me-text{
+       
+       font-size: 1rem;
     }
 }
