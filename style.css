@@ -110,10 +110,22 @@ nav ul li a:hover {
     border-radius: 50%;
     background-color: rgb(129, 253, 98);
     z-index: 1;  
-    right: -30%;
-    top: -65%;  
+    right: -10%;
+    top: -55%;  
     position: relative;
     filter: blur(170px); 
+}
+
+.circle-3{
+    height: 90%;
+    width: 40%;
+    border-radius: 50%;
+    background-color: rgb(212, 138, 0);
+    z-index: 1;  
+    right: -20%;
+    top: -15%;  
+    position: relative;
+    filter: blur(170px);
 }
 
 /*welcome*/
@@ -144,7 +156,7 @@ nav ul li a:hover {
 #projects {
     padding: 50px;
     padding-top: 75px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -171,6 +183,7 @@ img{
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
     width: 30%;
+    height: 32.5rem;
 }
 
 .project-tile:hover {
@@ -198,10 +211,29 @@ img{
     max-width: 35%;
     font-size: 1.5rem;
 }
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2%;
+}
+
+.btn-download:hover {
+    background-color: #0056b3;
+}
+
 /*Contact*/
 #contact {
     padding: 50px;
-    background-color: #cbcbcb;
+    background-color: #dedbdb;
     text-align: center;
 }
 
@@ -213,8 +245,8 @@ img{
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 .html, .js{
