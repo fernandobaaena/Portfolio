@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    max-width: 100svw;
 }
 
 body {
@@ -108,6 +109,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+/*--------------------lights-----------------*/
 .circle{
     height: 70%;
     width: 50%;
@@ -143,7 +145,18 @@ nav ul li a:hover {
     filter: blur(170px);
 }
 
-/*welcome*/
+.circle-4{
+    height: 90%;
+    width: 40%;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    z-index: 1;  
+    right: -29%;
+    top: 58%;  
+    position: relative;
+    filter: blur(170px);
+}
+/*--------------welcome---------------*/
 #welcome-section {
     display: flex;
     flex-direction: column;
@@ -199,6 +212,7 @@ img{
     transition: transform 0.3s ease-in-out;
     width: 30%;
     height: 32.5rem;
+    z-index: 2;
 }
 
 .project-tile:hover {
