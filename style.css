@@ -253,6 +253,7 @@ img{
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .btn-download:hover {
