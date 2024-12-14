@@ -237,7 +237,6 @@ img{
 }
 
 .about-me-text{
-    max-width: 35%;
     font-size: 1.5rem;
 }
 
@@ -348,7 +347,7 @@ footer {
     }
 
     .about-me-text{
-       
+       width: 100%;
        font-size: 1rem;
     }
 
@@ -359,6 +358,10 @@ footer {
 
     .menu-icon {
         display: block;
+    }
+
+    nav{
+        box-shadow: none;
     }
 
     .nav-links {
@@ -388,5 +391,6 @@ footer {
         display: flex; 
         transform: translateX(0); 
     }
+
     
 }
