@@ -15,7 +15,7 @@
 
 html {
     scroll-behavior: smooth;
-    max-width: 100svw;
+    max-width: 100%;
     min-width: 100svw;
 }
 
@@ -115,7 +115,6 @@ nav ul li a:hover {
 }
 .a:hover{
     color: #0064a6;
-    font-size: 55px;
     cursor: pointer;
 }
 
@@ -140,7 +139,7 @@ nav ul li a:hover {
     right: -10%;
     top: -55%;  
     position: relative;
-    filter: blur(170px); 
+    filter: blur(120px); 
 }
 
 .circle-3{
@@ -191,7 +190,7 @@ nav ul li a:hover {
     font-family: "Pacifico", serif;
     font-weight: 400px;
     font-style: normal;
-    font-size: 7rem;
+    font-size: calc(7vw+ 5rem);
     color: #2b2c34;
 }
 .welcome-text-2{
@@ -295,6 +294,12 @@ img{
     font-size: 1.5rem;
 }
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 footer {
     text-align: center;
@@ -309,6 +314,49 @@ footer {
 
 .css{
     max-width: 25%;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group textarea {
+    resize: none;
+    height: 100px;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-group button:hover {
+    background: #0056b3;
 }
 
 /*---------------Slider---------------*/
@@ -417,5 +465,9 @@ footer {
         transform: translateX(0); 
     }
 
+    .project-tile {
+        margin-bottom: 5%;
+        height: 50%;
+    }
     
 }
