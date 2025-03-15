@@ -156,7 +156,7 @@ nav ul li a:hover {
     height: 90%;
     width: 40%;
     border-radius: 50%;
-    background-color: rgb(29, 139, 21);
+    background-color: rgb(0, 30, 255);
     z-index: 1;  
     right: -25%;
     top: 58%;  
@@ -225,7 +225,7 @@ img{
 }
 
 .project-tile {
-    background-color: #eee;
+    background-color: #ceffdd;
     border: 2px solid #6246ea;
     margin: 20px;
     padding: 20px;
@@ -246,6 +246,10 @@ img{
 
 .project-tile p {
     font-size: 1.2rem;
+}
+
+.codigo-fuente{
+    color: #ffffff;
 }
 
 /*Sobre mi*/
@@ -310,8 +314,11 @@ footer {
     max-width: 15%;
 }
 
-.css{
+.css, .PHP-logo{
     max-width: 25%;
+}
+.laravel{
+    max-width: 15%;
 }
 
 .form-container {
