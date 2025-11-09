@@ -2,7 +2,7 @@ const menuIcon = document.getElementById('menu-icon');
 const navLinks = document.getElementById('nav-links');
 
 const elemento = document.querySelector(".welcome-text");
-    const texto = '¡Bienvenido/a a mi Portfolio!';
+    const texto = 'Fernando Baena Roselló';
 
     function efectoTextTyping(elemento, texto, i = 0) {
         if (i < texto.length) {
